@@ -6,36 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pix da Sorte</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  
   <style>
-    @media (max-width: 480px) {
-      h1 {
-        font-size: 1.6rem;
-      }
-      .cta-button {
-        width: 100%;
-        padding: 1rem;
-        font-size: 1rem;
-      }
-      .feature, .testimonials {
-        padding: 1rem;
-      }
-      .testimonial-content {
-        font-size: 0.95rem;
-        text-align: center;
-      }
-      .testimonial {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
+
     body {
       background: linear-gradient(to bottom, #e0f7f1, #b2dfdb);
       color: #1e1e1e;
@@ -44,21 +22,25 @@
       flex-direction: column;
       align-items: center;
     }
+
     .container {
       max-width: 500px;
       width: 100%;
       text-align: center;
     }
+
     h1 {
       font-size: 2.8rem;
       margin-bottom: 1rem;
       color: #00796b;
     }
+
     p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
       color: #2d2d2d;
     }
+
     .cta-button {
       display: inline-block;
       background-color: #00bfa5;
@@ -71,14 +53,17 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
       transition: background-color 0.3s ease, transform 0.2s ease;
     }
+
     .cta-button:hover {
       background-color: #008e76;
       transform: scale(1.05);
     }
+
     .features {
       margin-top: 3rem;
       text-align: left;
     }
+
     .feature {
       background-color: #ffffff;
       padding: 1rem;
@@ -86,13 +71,16 @@
       border-radius: 1rem;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
+
     .feature h3 {
       color: #00796b;
       margin-bottom: 0.5rem;
     }
+
     .feature p {
       color: #444;
     }
+
     .testimonials {
       margin-top: 3rem;
       background-color: #e0f2f1;
@@ -100,6 +88,7 @@
       border-radius: 1rem;
       box-shadow: 0 3px 10px rgba(0,0,0,0.15);
     }
+
     .testimonial {
       margin-bottom: 2rem;
       text-align: left;
@@ -107,6 +96,7 @@
       align-items: center;
       gap: 1rem;
     }
+
     .testimonial img {
       width: 64px;
       height: 64px;
@@ -114,23 +104,79 @@
       object-fit: cover;
       border: 2px solid #00bfa5;
     }
+
     .testimonial-content {
       flex: 1;
     }
+
     .testimonial p {
       font-style: italic;
       color: #004d40;
       margin-bottom: 0.3rem;
     }
+
     .testimonial strong {
       color: #00695c;
     }
+
     .pix-image {
       width: 100%;
       max-width: 400px;
       margin: 2rem auto;
       border-radius: 1rem;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .faq, .rules {
+      background: #ffffff;
+      padding: 2rem;
+      margin-top: 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .faq h2, .rules h2 {
+      color: #00796b;
+      margin-bottom: 1rem;
+      font-size: 1.6rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .faq-item h3 {
+      font-size: 1.1rem;
+      color: #004d40;
+    }
+
+    .faq-item p {
+      color: #333;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.6rem;
+      }
+      .cta-button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+      }
+      .feature, .testimonials, .faq, .rules {
+        padding: 1rem;
+      }
+      .testimonial-content {
+        font-size: 0.95rem;
+        text-align: center;
+      }
+      .testimonial {
+        flex-direction: column;
+        align-items: center;
+      }
     }
   </style>
 </head>
@@ -140,6 +186,7 @@
     <h1>Ganhe Prêmios com o Pix da Sorte!</h1>
     <p>Participe agora e concorra a prêmios incríveis com apenas um Pix! Sorteios diários e chances reais de ganhar!</p>
     <a href="#" class="cta-button">Participar Agora</a>
+
     <div class="features">
       <div class="feature">
         <h3>🎯 Sorteios Diários</h3>
@@ -154,6 +201,7 @@
         <p>Dinheiro, eletrônicos e muito mais esperando por você!</p>
       </div>
     </div>
+
     <div class="testimonials">
       <h2>O que dizem nossos participantes</h2>
       <div class="testimonial">
@@ -178,7 +226,38 @@
         </div>
       </div>
     </div>
-    <a href="#" class="cta-button">Participar Agora</a>
+
+    <div class="faq">
+      <h2>Dúvidas Frequentes</h2>
+      <div class="faq-item">
+        <h3>❓ Como faço para participar?</h3>
+        <p>Basta clicar em "Participar Agora" e seguir as instruções para realizar o Pix com o valor indicado. Você estará automaticamente concorrendo ao sorteio do dia!</p>
+      </div>
+      <div class="faq-item">
+        <h3>💰 Qual valor devo enviar?</h3>
+        <p>O valor mínimo para participar é de R$5. Você pode contribuir com mais se quiser aumentar suas chances.</p>
+      </div>
+      <div class="faq-item">
+        <h3>📩 Como recebo a confirmação?</h3>
+        <p>Após o Pix, você receberá uma confirmação via WhatsApp ou e-mail (caso tenha preenchido seus dados em nosso formulário).</p>
+      </div>
+      <div class="faq-item">
+        <h3>🔒 É confiável?</h3>
+        <p>Sim! Somos uma ação registrada e todos os sorteios são realizados de forma transparente. Veja abaixo o regulamento completo e nossos dados oficiais.</p>
+      </div>
+      <div class="faq-item">
+        <h3>🏆 Como saberei se ganhei?</h3>
+        <p>Os ganhadores são anunciados em nosso site e redes sociais todos os dias. Também entramos em contato diretamente com os vencedores.</p>
+      </div>
+      <a href="#" class="cta-button" style="margin-top: 2rem;">Participar Agora</a>
+    </div>
+
+    <div class="rules">
+      <h2>Transparência é tudo! 📜</h2>
+      <p>Veja nosso <a href="#" style="color:#00796b; font-weight: bold; text-decoration: underline;">Regulamento Completo</a> com todos os detalhes sobre como os sorteios funcionam, como armazenamos seus dados, e muito mais.</p>
+      <p>Organização registrada sob CNPJ 12.345.678/0001-99</p>
+      <p>Contato oficial: suporte@pixdasorte.com.br</p>
+    </div>
   </div>
 </body>
 </html>
